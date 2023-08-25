@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+
+body{
+background-color: black;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 20px auto; /* Centrera horisontellt */
+    width: 50%; /* Justera bredden efter behov */
+
+    display: flex; /* Lägg till detta */
+    flex-direction: column; /* Lägg till detta */
+    align-items: center; /* Lägg till detta */
+}
+
+
+
+#root{
+    margin-top: 20px;
+    margin-bottom: 10px;
+ 
+    text-align:center;
+}
+#root2, #root3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align:center;
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    
+}
+ 
+  #connectButton {
+
+  
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  
+
+    
+  }
+
+  #connectButton:hover{
+    border: 2px  rgb(12, 212, 6); /* Lägg till en snygg border */
+    animation: pulse 2s infinite; /* Använd animationen "pulse" med en varaktighet på 2 sekunder och upprepa oändligt */
+    
+  }
+  
+
+  #walletAddress {
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+
+    }
+
+    #gambelKnapp {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 10px;
+
+    }
+
+    #gambelKnapp:hover {
+        border: 2px  rgb(12, 212, 6); /* Lägg till en snygg border */
+        animation: pulse 2s infinite; /* Använd animationen "pulse" med en varaktighet på 2 sekunder och upprepa oändligt */
+        
+    }
+
+    
+
+    .countdown {
+      font-family: 'Orbitron', sans-serif;
+      color: rgb(80, 255, 11);
+      animation: pulse2 4s infinite;
+      font-size: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    @keyframes pulse2 {
+      0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      50% {
+        text-shadow: 0px 0px 10px rgba(80, 255, 11, 1), 0px 0px 20px rgba(80, 255, 11, 1), 0px 0px 30px rgba(80, 255, 11, 1), 0px 0px 40px rgba(80, 255, 11, 1);
+      }
+      100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .prisPengar {
+        font-family: 'Orbitron', sans-serif;
+        color: rgb(80, 255, 11);
+    
+        font-size: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
